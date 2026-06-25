@@ -9,10 +9,11 @@ from sklearn.metrics import classification_report
 # Configuración inicial de la página web
 st.set_page_config(page_title="Modelos Predictivos", page_icon="🔮", layout="wide")
 
-st.title("Modelos Predictivos - Fundamentos de Analítica de Datos")
+st.set_page_config(page_title="Modelos Predictivos - Fundamentos de Analítica de Datos")
 st.write("Bienvenido al portal de modelos predictivos donde el consejo de expertos toma decisiones basadas en datos.")
 
 # --- MENÚ LATERAL DE NAVEGACIÓN ---
+st.sidebar.title("Modelos Predictivos")
 opcion = st.sidebar.selectbox(
     "Selecciona el módulo que deseas consultar:",
     ("1. Predicción de Alumnos (Escuela)", "2. Índice de Mortalidad (Pacientes COVID-19)")
